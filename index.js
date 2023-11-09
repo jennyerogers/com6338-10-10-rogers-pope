@@ -10,4 +10,4 @@ our weather app assignment will be very helpful with this part
 
 and we have to use localstore somewhere (going to have to relearn that one!)
 
-*\
+*/
