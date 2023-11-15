@@ -1,16 +1,31 @@
 .body {
     display: flex;
     flex-direction: column;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
     margin: 0;
     background-image: url("background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
+.body.dog-page {
+  background-image: url("dogs.jpg");
+  background-repeat: no-repeat;
+    background-size: cover;
 
+}
+.body.cat-page {
+  background-image: url("cat.jpg");
+  background-repeat: no-repeat;
+    background-size: cover;
+}
+.body.animal-page {
+  background-image: url("animal.jpg");
+  background-repeat: no-repeat;
+    background-size: cover;
+}
 .header {
-    background-color: rgba(0, 0, 0, 0.908);
+    background-color: rgb(237, 247, 252);
     padding: 20px;
     font-size: 1.2rem;
 }
@@ -24,7 +39,7 @@
 
 .header__link {
     text-decoration: none;
-    color: white;
+    color: rgb(2, 2, 2);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     text-transform: uppercase;
@@ -33,7 +48,7 @@
 
 .header__link:hover {
     text-decoration: underline;
-    color: rgb(101, 210, 237);
+    color: rgb(34, 28, 153);
 }
 
 .main {
@@ -48,6 +63,7 @@
     margin: 50px 25em;
     background-color: white;
     border-radius: 7px;
+    text-align: center;
 }
 
 .article__h1 {
@@ -77,8 +93,8 @@
 
 
 .footer {
-    background-color:black;
-    color: white;
+    background-color:rgb(237, 247, 252);
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px;
     margin-top: auto;
