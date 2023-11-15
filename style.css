@@ -33,7 +33,7 @@
 
 .header__link:hover {
     text-decoration: underline;
-    color: yellow;
+    color: rgb(101, 210, 237);
 }
 
 .main {
@@ -72,7 +72,7 @@
 }
 
 .button:hover {
-    color: yellow;
+  color: rgb(101, 210, 237);
 }
 
 

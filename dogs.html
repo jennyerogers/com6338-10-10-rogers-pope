@@ -4,7 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Random Dog Generator</title>
+    <style>
+        #dogImage {
+            max-width: 100%;
+            height: auto;
+        }
+        button {
+            padding: 5px; 
+            margin-bottom: 20px;
+            margin-top: 12px;
+        }
+    </style>
 </head>
 <body class="body">
     <header class="header">
@@ -16,9 +27,14 @@
         </nav>
     </header>
     <main class="main">
-        <!--we can use this page to post today's hits and then maybe have a section for all time hits and the hits from a decade or two-->
+        <h1> Welcome to our Dog Gallery! </h1>
+        <p>Click the button below to browse photos of some furry friends!</p>
+        <button onclick="getRandomDog()">Generate a Random Dog Image</button>
+        <div id="dogContainer">
+            <img id="dogImage" src="" alt="Random Dog Image">
+        </div>
     </main>
     <footer class="footer">&copy 2023 Rogers, Pope</footer>
-    <script src="index.js"></script>
+    <script src="dogs.js"></script>
 </body>
 </html>
