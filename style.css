@@ -8,7 +8,22 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.body.dog-page {
+  background-image: url("dogs.jpg");
+  background-repeat: no-repeat;
+    background-size: cover;
 
+}
+.body.cat-page {
+  background-image: url("cat.jpg");
+  background-repeat: no-repeat;
+    background-size: cover;
+}
+.body.animal-page {
+  background-image: url("animal.jpg");
+  background-repeat: no-repeat;
+    background-size: cover;
+}
 .header {
     background-color: rgb(237, 247, 252);
     padding: 20px;
