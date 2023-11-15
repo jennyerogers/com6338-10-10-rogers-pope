@@ -14,7 +14,7 @@ form.onsubmit = async function(e) {
         const res = await fetch(`https://api.api-ninjas.com/v1/animals?name=${userSearch}`, {
             headers: { 'X-Api-Key': 'OZQk/6ir9ftXppmlpBoUOg==QVzAM3ILCSMgMnNz'}
         })
-        if (res.status === 404) throw new Error('Zip code not found')
+        if (res.status === 404) throw new Error('Zip code not found') //maybe update the error message so that if the animal isn't found, it says so
         const animalData = await res.json()
         console.log(animalData)
         renderAnimal(animalData)

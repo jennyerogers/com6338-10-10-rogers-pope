@@ -1,8 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Random Cat Generator</title>
+    <style>
+        #catImage {
+            max-width: 100%;
+            height: auto;
+        }
+        button {
+            padding: 5px; 
+            margin-bottom: 20px;
+            margin-top: 12px;
+        }
+    </style>
 </head>
 <body class="body">
     <header class="header">
@@ -12,11 +25,22 @@
             <a class="header__link" href="cats.html">Cats</a>
             <a class="header__link" href="search.html">Animal Search</a>
         </nav>
+        <style>
+            #dogImage {
+                max-width: 100%;
+                height: auto;
+            }
+        </style>
     </header>
     <main class="main">
-        
+        <h1> Welcome to our Cat Gallery! </h1>
+        <p> Click the button below to browse photos of some purr-fect cats</p>
+        <button onclick="getRandomCat()">Generate a Random Cat Image</button>
+        <div id="catContainer">
+            <img id="catImage" src="" alt="Random Cat Image">
+        </div>
     </main>
     <footer class="footer">&copy 2023 Rogers, Pope</footer>
-    <script src="artist.js"></script>
+    <script src="cats.js"></script>
 </body>
 </html>
