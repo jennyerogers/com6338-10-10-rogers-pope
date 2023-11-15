@@ -11,18 +11,21 @@
 .body.dog-page {
   background-image: url("dogs.jpg");
   background-repeat: no-repeat;
-    background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
 
 }
 .body.cat-page {
   background-image: url("cat.jpg");
   background-repeat: no-repeat;
-    background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .body.animal-page {
   background-image: url("animal.jpg");
   background-repeat: no-repeat;
-    background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .header {
     background-color: rgb(237, 247, 252);
