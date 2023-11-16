@@ -1,4 +1,4 @@
-.body {
+.body__index {
     display: flex;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
@@ -7,21 +7,38 @@
     background-image: url("background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
-.body.dog-page {
+.body__dogs {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  margin: 0;
   background-image: url("dogs.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-
 }
-.body.cat-page {
+
+.body__cats {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  margin: 0;
   background-image: url("cat.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
-.body.animal-page {
+
+.body__animals {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  margin: 0;
   background-image: url("animal.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -70,30 +87,36 @@
 }
 
 .article__h1 {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     text-align: center;
+}
+
+.article__h2 {
+  font-size: 1.1rem;
+  text-align: center;
 }
 
 .article__p {
     font-size: 1.1rem;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
     line-height: 1.75;
 }
 
 .button {
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px 24px;
+    margin: 20px 10px;
     border-radius: 12px;
-    background-color: black;
+    background-color: skyblue;
     color: white;
-    border: 2px solid black;
-    font-size: 0.9rem;
+    border: 2px solid;
+    font-size: 1rem;
+    cursor:pointer;
 }
 
 .button:hover {
-  color: rgb(101, 210, 237);
+  color: navy;
 }
-
 
 .footer {
     background-color:rgb(237, 247, 252);
@@ -181,41 +204,3 @@
       padding: 10px;
     }
   }
-
-/* copied the below straight from an old project for mobile responsiveness, and it needs to be tweeked to work with our site but I can't relearn all of this tonight haha to be revisited but we've got the structure at least
-@media (min-width: 800px) {
-    .img__primary {
-        max-width: 800px;
-        width: auto;
-    }
-}
-
-@media screen and (max-width: 800px) {
-
-.header__link {
-    padding: 10px ;
-}
-    
-.header__nav  {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.main__caption {
-    font-size: 0.5rem;
-}
-
-h1 {
-    font-size: 1.3rem;
-}
-
-p {
-    font-size: .8rem;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
