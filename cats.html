@@ -10,15 +10,9 @@
             max-width: 100%;
             height: auto;
         }
-        button {
-            padding: 5px; 
-            margin-top: 15 px;
-            margin-bottom: 15px;
-        }
     </style>
 </head>
-<body class="body cat-page">
-<body class="body">
+<body class="body__cats">
     <header class="header">
         <nav class="header__nav layout">
             <a class="header__link" href="index.html">Home</a>
@@ -34,15 +28,16 @@
         </style>
     </header>
     <main class="main">
-        <h2> Welcome to our Cat Gallery! </h2>
-        <p> Click the button below to browse photos of some purr-fect cats</p>
-        <button onclick="getRandomCat()">Generate a Random Cat Image</button>
-        <div id="catContainer">
-            <img id="catImage" src="" alt="Random Cat Image">
-        </div>
+        <article>
+             <h1 class="article__h1">Welcome to our Cat Gallery!</h1>
+            <p class="article__p">Click the button below to browse photos of some purr-fect cats</p>
+            <button class="button" onclick="getRandomCat()">Generate a Random Cat Image</button>
+            <div id="catContainer">
+                <img id="catImage" src="" alt="Random Cat Image">
+            </div>
+        </article>    
     </main>
     <footer class="footer">&copy 2023 Rogers, Pope</footer>
     <script src="cats.js"></script>
-</body>
 </body>
 </html>
