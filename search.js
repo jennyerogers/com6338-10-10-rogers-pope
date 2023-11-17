@@ -1,7 +1,3 @@
-/*
-and we have to use localstore somewhere (going to have to relearn that one!)
-*/
-
 const form = document.querySelector('form')
 const animalSec = document.getElementById('animals')
 
@@ -36,7 +32,7 @@ const renderAnimal = ({
             most_distinctive_feature,
             habitat,
             diet,
-             location,
+            location,
             slogan,
             lifespan
         }
